@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -223,9 +224,11 @@
         <label for="cv">Currículum (PDF) <span class="req">*</span></label>
         <input type="file" id="cv" name="cv" accept=".pdf,application/pdf" />
         <span class="field-error" id="err-cv"></span>
-    </div>
+      </div>
 
     </div><!-- /form-grid -->
+
+    <div class="g-recaptcha" data-sitekey="6LcLv8wsAAAAAMk2tjaHdRZNwWWN6u4C9KWLbdkN"></div>
 
     <div class="form-footer">
       <p class="form-note">Los campos marcados con <span style="color:var(--gold)">*</span> son obligatorios. Tus datos se tratarán conforme al RGPD.</p>
