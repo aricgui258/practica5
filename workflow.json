@@ -221,7 +221,7 @@
       "typeVersion": 4.7,
       "position": [
         400,
-        -144
+        -64
       ],
       "id": "61eaf991-544a-41c4-89af-90a08472bc32",
       "name": "Append row in sheet",
@@ -259,7 +259,7 @@
       "typeVersion": 2.2,
       "position": [
         400,
-        144
+        224
       ],
       "id": "1dd9c596-a68c-4071-8e8b-7d20593ec757",
       "name": "Send a message",
@@ -281,8 +281,8 @@
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.2,
       "position": [
-        720,
-        144
+        608,
+        -112
       ],
       "id": "37b6a004-b38f-4cee-89e2-a72bbc5b5bf3",
       "name": "Telegram Trigger",
@@ -304,7 +304,7 @@
       "typeVersion": 1.2,
       "position": [
         400,
-        0
+        80
       ],
       "id": "e168ec3f-a25a-4094-95e4-96ff9d66d6f2",
       "name": "Send a text message1",
@@ -325,8 +325,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        896,
-        64
+        784,
+        -192
       ],
       "id": "f2373c52-df83-46ed-b541-b2e289aa1f8c",
       "name": "Send a text message",
@@ -348,8 +348,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        896,
-        256
+        784,
+        0
       ],
       "id": "a575fb49-2fba-4ed2-b839-529e564629df",
       "name": "Send a sticker",
@@ -372,10 +372,9 @@
         },
         "folderId": {
           "__rl": true,
-          "value": "1Ba735yOFZwQMs41yl-kj0XXMIFCv03g0",
           "mode": "list",
-          "cachedResultName": "CVs Práctica 5",
-          "cachedResultUrl": "https://drive.google.com/drive/folders/1Ba735yOFZwQMs41yl-kj0XXMIFCv03g0"
+          "value": "root",
+          "cachedResultName": "/ (Root folder)"
         },
         "options": {}
       },
@@ -383,7 +382,7 @@
       "typeVersion": 3,
       "position": [
         400,
-        288
+        368
       ],
       "id": "964d1675-0ec7-4404-9191-e5c74c5c59b7",
       "name": "Upload file",
@@ -393,69 +392,6 @@
           "name": "Google Drive OAuth2 API"
         }
       }
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "https://www.google.com/recaptcha/api/siteverify",
-        "sendBody": true,
-        "contentType": "form-urlencoded",
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "secret",
-              "value": "6LcLv8wsAAAAADQGjpAu4DuVTvuH2dsabGMTyoI8"
-            },
-            {
-              "name": "response",
-              "value": "g-recaptcha-response"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.4,
-      "position": [
-        512,
-        448
-      ],
-      "id": "353110a4-e330-4791-babc-d0856d0d34f5",
-      "name": "HTTP Request"
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "f6af4948-879f-4b0e-b495-c322d83e4e8a",
-              "leftValue": "success",
-              "rightValue": "true",
-              "operator": {
-                "type": "string",
-                "operation": "equals",
-                "name": "filter.operator.equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        304,
-        448
-      ],
-      "id": "772b9333-bd0d-4680-a5a6-db80d1e73c7d",
-      "name": "If"
     }
   ],
   "pinData": {},
@@ -480,11 +416,6 @@
           },
           {
             "node": "Upload file",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "If",
             "type": "main",
             "index": 0
           }
@@ -517,22 +448,6 @@
           }
         ]
       ]
-    },
-    "HTTP Request": {
-      "main": [
-        []
-      ]
-    },
-    "If": {
-      "main": [
-        [
-          {
-            "node": "HTTP Request",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
     }
   },
   "active": false,
@@ -540,7 +455,7 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "6179020d-5e78-4b89-87dc-f55e2546ca4f",
+  "versionId": "23a78f4c-4ac7-41b8-ade9-dcaafafa8646",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "16c17df939029dc2c4e24315315e5c41c93ea91a86c0d18446f6399e5c90a0a9"
