@@ -62,38 +62,6 @@ function markOk(id) {
   if (input) { input.classList.add('ok'); input.classList.remove('error'); }
 }
 
-/* Intercepción del envio del formulario */
-document.getElementById("applicationForm").addEventListener("submit", async function (e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const formData = new FormData(form);
-
-  const submitBtn = document.getElementById("submit-btn");
-  submitBtn.disabled = true;
-
-  try {
-    const response = await fetch("https://aricgui258.app.n8n.cloud/webhook-test/form-candidatos", {
-      method: "POST",
-      body: formData
-    });
-
-    if (response.ok) {
-      // éxito UX
-      alert("Candidatura enviada correctamente");
-      form.reset();
-      if (window.grecaptcha) grecaptcha.reset();
-    } else {
-      alert("Error al enviar el formulario");
-    }
-
-  } catch (error) {
-    console.error(error);
-    alert("Error de conexión");
-  } finally {
-    submitBtn.disabled = false;
-  }
-});
 
 /* ── Validación de edad ── */
 function validateAge(dateStr) {
