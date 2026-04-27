@@ -1,0 +1,465 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "16RlrzyNi2JxDpbRf6cA3lXUy3ZZZ4WZRgnpQ3eplMV8",
+          "mode": "list",
+          "cachedResultName": "P5",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/16RlrzyNi2JxDpbRf6cA3lXUy3ZZZ4WZRgnpQ3eplMV8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/16RlrzyNi2JxDpbRf6cA3lXUy3ZZZ4WZRgnpQ3eplMV8/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "nombre": "={{ $json.body.nombre }}",
+            "apellidos": "={{ $json.body.apellidos }}",
+            "fecha_nac": "={{ $json.body.fecha_nac }}",
+            "dni": "={{ $json.body.dni }}",
+            "direccion": "={{ $json.body.direccion }}",
+            "ciudad": "={{ $json.body.ciudad }}",
+            "cp": "={{ $json.body.cp }}",
+            "email": "={{ $json.body.email }}",
+            "telefono": "={{ $json.body.telefono }}",
+            "estudios": "={{ $json.body.estudios }}",
+            "carnet": "={{ $json.body.carnet }}",
+            "experiencia": "={{ $json.body.experiencia }}",
+            "posicion": "={{ $json.body.posicion }}",
+            "modalidad": "={{ $json.body.modalidad }}",
+            "linkedin": "={{ $json.body.linkedin }}",
+            "disponibilidad": "={{ $json.body.disponibilidad }}",
+            "motivacion": "={{ $json.body.motivacion }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "nombre",
+              "displayName": "nombre",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "apellidos",
+              "displayName": "apellidos",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "fecha_nac",
+              "displayName": "fecha_nac",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "dni",
+              "displayName": "dni",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "direccion",
+              "displayName": "direccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "ciudad",
+              "displayName": "ciudad",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "cp",
+              "displayName": "cp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "telefono",
+              "displayName": "telefono",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "estudios",
+              "displayName": "estudios",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "carnet",
+              "displayName": "carnet",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "experiencia",
+              "displayName": "experiencia",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "posicion",
+              "displayName": "posicion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "modalidad",
+              "displayName": "modalidad",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "disponibilidad",
+              "displayName": "disponibilidad",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "linkedin",
+              "displayName": "linkedin",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "motivacion",
+              "displayName": "motivacion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        400,
+        -64
+      ],
+      "id": "61eaf991-544a-41c4-89af-90a08472bc32",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "PaCHkaNcTOEi5vn8",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "form-candidatos",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        128,
+        144
+      ],
+      "id": "ce20aeea-4eb8-4c90-9ca2-0bd5f7783a96",
+      "name": "Webhook",
+      "webhookId": "563195f7-b57e-4d25-94d6-d615292219e7"
+    },
+    {
+      "parameters": {
+        "sendTo": "aricgui258@gmail.com",
+        "subject": "Nueva candidatura presentada",
+        "message": "=<html>\n    <h2>Se ha recibido una nueva candidatura. A continuación, se detallan los datos del candidato:</h2>\n<br><br>\n        <b>Nombre:</b> {{ $json.body.nombre }}<br>\n        <b>Apellidos:</b> {{ $json.body.apellidos }}<br>\n        <b>Ciudad:</b> {{ $json.body.ciudad }}<br>\n        <b>Estudios:</b> {{ $json.body.estudios }}<br>\n        <b>Posición de interés y modalidad:</b> {{ $json.body.posicion }} {{ $json.body.modalidad }}<br>\n        <b>Email:</b> {{ $json.body.email }}<br>\n        <b>Teléfono:</b> {{ $json.body.telefono }}<br>\n<br><br>\n    Por favor, revisa la información y procede con el siguiente paso del proceso de selección si corresponde.\n  </html>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        400,
+        224
+      ],
+      "id": "1dd9c596-a68c-4071-8e8b-7d20593ec757",
+      "name": "Send a message",
+      "webhookId": "77573fbe-de22-445d-8035-9f2c3a49fff1",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "FrhSPmMMdY4dsEPL",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        608,
+        -112
+      ],
+      "id": "37b6a004-b38f-4cee-89e2-a72bbc5b5bf3",
+      "name": "Telegram Trigger",
+      "webhookId": "f54853e0-88ac-4849-896b-8aa6f0039729",
+      "credentials": {
+        "telegramApi": {
+          "id": "gXpZ7V4PnGeGBFfE",
+          "name": "José Luis 900"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "=1094276429",
+        "text": "=Nueva solicitud de empleo de parte de {{ $json.body.nombre }} {{ $json.body.apellidos }}.",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        400,
+        80
+      ],
+      "id": "e168ec3f-a25a-4094-95e4-96ff9d66d6f2",
+      "name": "Send a text message1",
+      "webhookId": "89972dcd-9c82-493a-b97a-cfe6afcf1ff5",
+      "credentials": {
+        "telegramApi": {
+          "id": "gXpZ7V4PnGeGBFfE",
+          "name": "José Luis 900"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.message.chat.id }}",
+        "text": "¡Hola! No te molestes en enviarme mensajes, mi única tarea es informar sobre nuevas candidaturas jejeje.",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        784,
+        -192
+      ],
+      "id": "f2373c52-df83-46ed-b541-b2e289aa1f8c",
+      "name": "Send a text message",
+      "webhookId": "bef6fc35-ea09-495c-839f-5afc2ca6d5e1",
+      "credentials": {
+        "telegramApi": {
+          "id": "gXpZ7V4PnGeGBFfE",
+          "name": "José Luis 900"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendSticker",
+        "chatId": "={{ $json.result.chat.id }}",
+        "file": "CAACAgQAAxkBAAMXae8jIHWFGL140r-LEsznmTDyI7wAAlIUAAIzWMhTKWQ5L6nQIII7BA",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        784,
+        0
+      ],
+      "id": "a575fb49-2fba-4ed2-b839-529e564629df",
+      "name": "Send a sticker",
+      "webhookId": "b2be9707-f260-487e-a0c4-3a8d6e210c21",
+      "credentials": {
+        "telegramApi": {
+          "id": "gXpZ7V4PnGeGBFfE",
+          "name": "José Luis 900"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "cv",
+        "name": "=CV de {{ $json.body.nombre }} {{ $json.body.apellidos }}",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "root",
+          "cachedResultName": "/ (Root folder)"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        400,
+        368
+      ],
+      "id": "964d1675-0ec7-4404-9191-e5c74c5c59b7",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "aEZRgBpkieDjlLpp",
+          "name": "Google Drive OAuth2 API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send a text message1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append row in sheet": {
+      "main": [
+        []
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message": {
+      "main": [
+        [
+          {
+            "node": "Send a sticker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "23a78f4c-4ac7-41b8-ade9-dcaafafa8646",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "16c17df939029dc2c4e24315315e5c41c93ea91a86c0d18446f6399e5c90a0a9"
+  },
+  "id": "ybhApJiOhugLrvkm",
+  "tags": []
+}

@@ -141,6 +141,18 @@ document.getElementById('cp').addEventListener('input', function () {
   this.value = this.value.replace(/\D/g, '');
 });
 
+/* Cambios en sección de subida de CV */
+document.getElementById('cv').addEventListener('change', function() {
+  const file = this.files[0];
+  const maxSize = 2 * 1024 * 1024; // 2MB
+
+  if (file && file.size > maxSize) {
+    document.getElementById('err-cv').textContent = 'El archivo debe ser menor de 2MB';
+    this.value = '';
+  } else {
+    document.getElementById('err-cv').textContent = '';
+  }
+});
 
 /* ── Control de envío (anti-doble-clic) ── */
 let submitted = false;
